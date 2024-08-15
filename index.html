@@ -13,34 +13,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="mx-auto max-w-[78%] flex mt-10">
-      <div class="left w-[50%]">
-        <h1 class="text-[65px] leading-snug">
+    <!-- fast-section -->
+    <header
+      class="min-[320px]:w-[90%] mx-auto mt-[40px] lg:flex lg:justify-between"
+    >
+      <div class="lg:w-[50%]">
+        <h1
+          class="min-[320px]:text-[40px] md:text-[80px] font-['inter'] font-extrabold lg:text-[60px] xl:text-[80px]"
+        >
           It's good <br />
           tea time at The <br />
           Tea House
         </h1>
-        <p class="text-1xl text-slate-500 my-[20px]">
+        <p class="text-1xl text-slate-500 my-[20px] font-['inter']">
           Tea and Botanical Solutions Supplier Give Optimum <br />
           Satisfaction To Your Taste Buds.
         </p>
         <button
-          class="w-[160px] h-[60px] bg-gradient-to-r from-orange-500 bg-red-600 font-bold text-slate-50 rounded-lg"
+          class="min-[320px]:w-[160px] min-[320px]:h-[60px] min-[320px]:bg-gradient-to-r from-orange-500 min-[320px]: bg-red-600 font-bold min-[320px]: text-slate-50 rounded-lg font-['inter']"
         >
           Explore More
           <i class="ri-arrow-right-up-line text-[20px] font-light"></i>
         </button>
       </div>
-      <div class="right w-[50%] relative">
-        <img class="mt-[30px]" src="images/banner.png" alt="" />
+      <div class="min-[320px]:w-[100%] lg:w-[50%] relative">
+        <img class="mt-[20px] lg:w-[100%]" src="images/banner.png" alt="" />
         <div
-          class="cart bg-white w-[255px] h-[100px] flex justify-center items-center shadow-xl rounded-[8px] absolute top-[370px] left-[50px]"
+          class="cart bg-white w-[255px] h-[100px] flex justify-center items-center shadow-xl rounded-[8px] absolute top-[220px] left-[20px] xl:top-[350px] xl:left-[50px]"
         >
           <div class="flex gap-3 justify-center items-center">
             <i class="ri-star-fill text-3xl text-yellow-500"></i>
@@ -54,77 +61,94 @@
         </div>
       </div>
     </header>
-    <main class="mx-auto max-w-[78%]">
-      <h1 class="text-center text-[38px] font-bold mb-4 mt-[110px]">
+    <!-- fast-section End -->
+    <main class="min-[320px]:w-[90%] mx-auto">
+      <h1
+        class="text-center text-[35px] font-bold mb-4 mt-[110px] pl-[20px] lg:text-[45px]"
+      >
         Our Featured Products
       </h1>
-      <p class="text-center text-slate-500">
+      <p class="text-center text-slate-500 pl-[20px] pr-[20px]">
         There are many variations of passages of Lorem Ipsum available, but the
-        majority <br />
-        have suffered alteration in some form, by injected humour, or randomised
-        words <br />
-        which don't look even slightly believable.
+        majority have suffered alteration in some <br />
+        form, by injected humour, or randomised words which don't look even
+        slightly believable.
       </p>
-      <div class="p-cart mt-[50px] flex gap-[24px]">
+      <!-- card-section ------->
+      <div class="lg:flex mt-[50px] lg:gap-[24px]">
         <div
-          class="cart-one w-[267px] h-[391px] flex flex-col gap-[30px] items-center bg-[#F6F6F6] rounded-lg"
+          class="p-cart flex justify-center lg:w-[100%] items-center min-[320px]:w-[100%] min-[320px]:flex-col min-[520px]:flex-row gap-[24px]"
         >
-          <img class="w-[50%] mt-[30px]" src="images/tea-1.png" alt="" />
-          <div class="text">
-            <h1 class="text-center font-bold text-[25px]">Milk Tea</h1>
-            <p
-              class="text-center pt-[10px] text-[16px] font-semibold text-slate-500"
-            >
-              Creamer could be <br />
-              replaced by fresh milk
-            </p>
+          <div
+            class="cart-one lg:w-[50%] w-[267px] h-[391px] xl:h-[430px] flex flex-col gap-[30px] items-center bg-[#F6F6F6] rounded-lg"
+          >
+            <img class="w-[50%] mt-[30px]" src="images/tea-1.png" alt="" />
+            <div class="text">
+              <h1 class="text-center font-bold text-[25px]">Milk Tea</h1>
+              <p
+                class="text-center pt-[10px] text-[16px] font-semibold text-slate-500"
+              >
+                Creamer could be <br />
+                replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <div
+            class="cart-one xl:h-[430px] lg:w-[50%] w-[267px] h-[391px] flex flex-col gap-[30px] items-center bg-[#F5F5F5] rounded-lg"
+          >
+            <img class="w-[50%] mt-[45px]" src="images/tea-2.png" alt="" />
+            <div class="text">
+              <h1 class="text-center font-bold text-[25px]">Black Tea</h1>
+              <p
+                class="text-center pt-[10px] text-[16px] font-semibold text-slate-500"
+              >
+                Creamer could be <br />
+                replaced by fresh milk
+              </p>
+            </div>
           </div>
         </div>
         <div
-          class="cart-one w-[267px] h-[391px] flex flex-col gap-[30px] items-center bg-[#F5F5F5] rounded-lg"
+          class="p-cart xl:h-[430px] lg:mt-0 mt-[24px] flex justify-center items-center min-[320px]:w-[100%] min-[320px]:flex-col min-[520px]:flex-row gap-[24px]"
         >
-          <img class="w-[50%] mt-[45px]" src="images/tea-2.png" alt="" />
-          <div class="text">
-            <h1 class="text-center font-bold text-[25px]">Black Tea</h1>
-            <p
-              class="text-center pt-[10px] text-[16px] font-semibold text-slate-500"
-            >
-              Creamer could be <br />
-              replaced by fresh milk
-            </p>
+          <div
+            class="cart-one xl:h-[430px] lg:w-[50%] w-[267px] h-[391px] flex flex-col gap-[30px] items-center bg-[#F5F5F5] rounded-lg"
+          >
+            <img class="w-[50%] mt-[45px]" src="images/tea-3.png" alt="" />
+            <div class="text">
+              <h1 class="text-center font-bold text-[25px]">Lemon Tea</h1>
+              <p
+                class="text-center pt-[10px] text-[16px] font-semibold text-slate-500"
+              >
+                Creamer could be <br />
+                replaced by fresh milk
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          class="cart-one w-[267px] h-[391px] flex flex-col gap-[30px] items-center bg-[#F5F5F5] rounded-lg"
-        >
-          <img class="w-[50%] mt-[45px]" src="images/tea-3.png" alt="" />
-          <div class="text">
-            <h1 class="text-center font-bold text-[25px]">Lemon Tea</h1>
-            <p
-              class="text-center pt-[10px] text-[16px] font-semibold text-slate-500"
-            >
-              Creamer could be <br />
-              replaced by fresh milk
-            </p>
-          </div>
-        </div>
-        <div
-          class="cart-one w-[267px] h-[391px] flex flex-col gap-[30px] items-center bg-[#F8F8F8] rounded-lg"
-        >
-          <img class="w-[50%] mt-[28px]" src="images/tea-4.png" alt="" />
-          <div class="text">
-            <h1 class="text-center font-bold text-[25px]">Green Tea</h1>
-            <p
-              class="text-center text-[16px] pt-[10px] font-semibold text-slate-500"
-            >
-              Creamer could be <br />
-              replaced by fresh milk
-            </p>
+          <div
+            class="cart-one xl:h-[430px] lg:w-[50%] w-[267px] h-[391px] flex flex-col gap-[30px] items-center bg-[#F8F8F8] rounded-lg"
+          >
+            <img class="w-[50%] mt-[28px]" src="images/tea-4.png" alt="" />
+            <div class="text">
+              <h1 class="text-center font-bold text-[25px]">Green Tea</h1>
+              <p
+                class="text-center text-[16px] pt-[10px] font-semibold text-slate-500"
+              >
+                Creamer could be <br />
+                replaced by fresh milk
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <section class="mt-[165px] flex gap-[52px]">
-        <div class="left w-[50%] flex gap-[30px]">
+      <!-- card-section End -->
+      <!-- tea-section -->
+      <section
+        class="mt-[165px] min-[320px]:mt-[100px] flex gap-[52px] min-[320px]:flex-col lg:flex-row"
+      >
+        <div
+          class="left w-[50%] flex gap-[30px] min-[320px]:w-[100%] min-[320px]:flex-col min-[320px]:justify-center min-[320px]:items-center min-[530px]:flex-row min-[530px]:justify-start lg:items-start"
+        >
           <div class="color flex flex-col gap-[29px] rounded-[10px]">
             <div
               class="rgba w-[238px] h-[138px] bg-[#FFEDE8] rounded-[10px]"
@@ -146,8 +170,8 @@
             ></div>
           </div>
         </div>
-        <div class="right w-[50%]">
-          <h1 class="text-[45px] font-bold mb-[34px]">
+        <div class="right w-[50%] min-[320px]:w-[100%]">
+          <h1 class="text-[45px] font-bold mb-[34px] min-[320px]:text-[35px]">
             Great Tea, Freshly <br />
             Presented
           </h1>
@@ -174,13 +198,17 @@
           </p>
         </div>
       </section>
+      <!-- tea-section End -->
+      <!-- Hard-section ----->
       <section
-        class="hard flex justify-between bg-gradient-to-t bg-orange-400 from-red-600 rounded-[10px] mt-[130px]"
+        class="hard mt-[130px] min-[320px]:justify-center min-[320px]:items-center min-[320px]:flex-col flex justify-between bg-gradient-to-t bg-orange-400 from-red-600 rounded-[10px] mt-[130px lg:flex-row ]"
       >
         <div
-          class="h-left pt-[155px] pb-[154px] pl-[70px] w-[50%] bg-[url('/images/bg_cup.png')] bg-no-repeat bg-bottom"
+          class="h-left min-[320px]:w-[100%] min-[320px]:pt-[90px] pt-[155px] min-[320px]:pb-[90px] pb-[154px] pl-[70px] min-[320px]:pr-[40px] w-[50%] bg-[url('/images/bg_cup.png')] bg-no-repeat bg-bottom"
         >
-          <h1 class="text-[45px] font-bold text-white">
+          <h1
+            class="text-[45px] min-[320px]:text-[35px] md:text-[45px] font-bold text-white"
+          >
             Meet Our Super <br />
             Clients
           </h1>
@@ -196,7 +224,9 @@
             Show All
           </button>
         </div>
-        <div class="h-right pr-[70px] pt-[102px] w-[50%] pl-[50px] relative">
+        <div
+          class="md:w-[50%] min-[320px]:w-[100%] h-right pr-[70px] pt-[102px] w-[50%] pl-[50px] relative"
+        >
           <div
             class="review mb-[57px] opacity-[0.4] pl-[50px] pt-[41px] rounded-[8px] w-[376.03px] h-[202px] pr-[36px] bg-gray-100 relative"
           >
@@ -242,17 +272,27 @@
             </div>
           </div>
           <!-- jhmela -->
-          <div class="cover absolute top-[211px] left-[-50px]">
+          <div
+            class="cover absolute xl:left-[-50px] top-[211px] left-[-50px] min-[320px]:left-[26px]"
+          >
             <div
-              class="review pl-[50px] pt-[41px] rounded-[8px] w-[433px] h-[233px] bg-gray-100 relative"
+              class="review min-[320px]:w-[300px] min-[320px]:h-[200px] pl-[50px] pt-[41px] rounded-[8px] w-[433px] h-[233px] bg-gray-100 lg:w-[380px] xl:w-[433px] xl:h-[233px] relative"
             >
-              <p class="text-[16px] text-slate-500">
+              <p
+                class="text-[16px] min-[320px]:text-[12px] xl:text-[16px] text-slate-500"
+              >
                 We are providing the best and suitable home <br />
                 insurance services for the people who are <br />
                 interested to treatment
               </p>
-              <h1 class="mt-[20px] font-bold text-[16px]">Ilham Yuda</h1>
-              <p class="mt-[16px] text-[16px] text-slate-500 font-semibold">
+              <h1
+                class="xl:mt-[20px] min-[320px]:mt-[12px] font-bold text-[16px]"
+              >
+                Ilham Yuda
+              </h1>
+              <p
+                class="mt-[16px] min-[320px]:mt-[12px] text-[16px] text-slate-500 font-semibold"
+              >
                 Businessman
               </p>
               <div
@@ -269,96 +309,86 @@
           <!-- jhmela end -->
         </div>
       </section>
-      <h1 class="text-center text-[45px] font-bold mt-[130px]">
-        News & Events
-      </h1>
+      <!-- Hard-section End -->
+      <h1 class="text-center text-[45px] font-bold mt-[90px]">News & Events</h1>
       <p class="text-center text-slate-500 text-[16px] mt-[27px]">
         There are many variations of passages of Lorem Ipsum available, but the
         majority have suffered alteration in some <br />
         form, by injected humour, or randomised words which don't look even
         slightly believable.
       </p>
-      <section class="discount flex gap-[24px] mt-[50px]">
-        <!-- offer-one -->
+      <!-- offer-section -->
+      <!-- offer-one -->
+      <section
+        class="discount flex min-[320px]:flex-col min-[320px]:justify-center min-[320px]:items-center gap-[24px] mt-[50px] md:flex-row"
+      >
         <div
-          class="offer flex flex-col justify-center items-center w-[368px] h-[448px] border border-gray-500 rounded-[10px]"
+          class="offer flex flex-col justify-center items-center w-[368px] h-[448px] border border-gray-500 rounded-[10px] md:pl-[20px] md:pr-[20px]"
         >
           <div class="image"><img src="images/news-1.png" alt="" /></div>
-          <div class="of">
-            <p
-              class="text-[16px] font-semibold text-slate-500 pl-[32px] pt-[20px]"
-            >
+          <div class="of pl-[32px] md:pl-[0px]">
+            <p class="text-[16px] font-semibold text-slate-500 pt-[20px]">
               Feb 05, 2027
             </p>
-            <h1 class="text-[20px] font-extrabold pl-[32px] pt-[10px]">
+            <h1 class="text-[20px] md:text-[16px] font-extrabold pt-[10px]">
               Collecting 8 points for <br />
               discount
             </h1>
-            <p class="text-[16px] text-slate-500 pl-[32px] pt-[17px]">
+            <p class="text-[16px] text-slate-500 pt-[17px]">
               There are many variations of passages of Lorem Ipsum available.
             </p>
-            <h1 class="text-[16px] font-bold pl-[32px] pt-[10px]">
-              Learn More
-            </h1>
+            <h1 class="text-[16px] font-bold pt-[10px]">Learn More</h1>
           </div>
         </div>
         <!-- offer-one-End -->
         <!-- offer-two -->
-
         <div
-          class="offer flex flex-col justify-center items-center w-[368px] h-[448px] border border-gray-500 rounded-[10px]"
+          class="offer flex flex-col justify-center items-center w-[368px] h-[448px] border border-gray-500 rounded-[10px] md:pl-[20px] md:pr-[20px]"
         >
           <div class="image"><img src="images/news-2.png" alt="" /></div>
-          <div class="of">
-            <p
-              class="text-[16px] font-semibold text-slate-500 pl-[32px] pt-[20px]"
-            >
+          <div class="of pl-[32px] md:pl-[0px]">
+            <p class="text-[16px] font-semibold text-slate-500 pt-[20px]">
               Feb 05, 2027
             </p>
-            <h1 class="text-[20px] font-extrabold pl-[32px] pt-[10px]">
+            <h1 class="text-[20px] md:text-[16px] font-extrabold pt-[10px]">
               Collecting 8 points for <br />
               discount
             </h1>
-            <p class="text-[16px] text-slate-500 pl-[32px] pt-[17px]">
+            <p class="text-[16px] text-slate-500 pt-[17px]">
               There are many variations of passages of Lorem Ipsum available.
             </p>
-            <h1 class="text-[16px] font-bold pl-[32px] pt-[10px]">
-              Learn More
-            </h1>
+            <h1 class="text-[16px] font-bold pt-[10px]">Learn More</h1>
           </div>
         </div>
         <!-- offer-two-end -->
         <!-- offer-three -->
         <div
-          class="offer flex flex-col justify-center items-center w-[368px] h-[448px] border border-gray-500 rounded-[10px]"
+          class="offer flex flex-col justify-center items-center w-[368px] h-[448px] border border-gray-500 rounded-[10px] md:pl-[20px] md:pr-[20px]"
         >
           <div class="image"><img src="images/news-3.png" alt="" /></div>
-          <div class="of">
-            <p
-              class="text-[16px] font-semibold text-slate-500 pl-[32px] pt-[20px]"
-            >
+          <div class="of pl-[32px] md:pl-[0px]">
+            <p class="text-[16px] font-semibold text-slate-500 pt-[20px]">
               Feb 05, 2027
             </p>
-            <h1 class="text-[20px] font-extrabold pl-[32px] pt-[10px]">
+            <h1 class="text-[20px] md:text-[16px] font-extrabold pt-[10px]">
               Collecting 8 points for <br />
               discount
             </h1>
-            <p class="text-[16px] text-slate-500 pl-[32px] pt-[17px]">
+            <p class="text-[16px] text-slate-500 pt-[17px]">
               There are many variations of passages of Lorem Ipsum available.
             </p>
-            <h1 class="text-[16px] font-bold pl-[32px] pt-[10px]">
-              Learn More
-            </h1>
+            <h1 class="text-[16px] font-bold pt-[10px]">Learn More</h1>
           </div>
         </div>
-        <!-- offer-three-end -->
       </section>
+      <!-- offer-section End -->
     </main>
-    <footer class="mx-auto max-w-[100%] mt-[130px] bg-[#FFEDE8]">
+    <!-- footer -->
+    <footer class="mx-auto w-[100%] mt-[130px] bg-[#FFEDE8]">
       <div class="footer-father mx-auto max-w-[78%] pt-[142px]">
         <div class="fast-part flex justify-between items-center pr-[65px]">
-          <img src="images/cup.png" alt="" />
-          <div class="btn flex items-center gap-[40px]">
+          <img class="max-[500px]:pr-[20px]" src="images/cup.png" alt="" />
+          <div class="btn flex items-center gap-[40px] max-[500px]:gap-[10px]">
             <p>Ready to get strated?</p>
             <button
               class="w-[164px] h-[64px] text-[20px] bg-gradient-to-r from-orange-500 bg-red-600 font-bold text-slate-50 rounded-lg"
@@ -369,7 +399,7 @@
         </div>
         <div class="part-two">
           <div class="text flex justify-between pt-[100px]">
-            <div class="one">
+            <div class="one max-[500px]:hidden">
               <h1 class="text-[20px] font-semibold pb-[25px]">Quick Links</h1>
               <p class="text-[16px] font-medium text-slate-500 pb-[18px]">
                 Home
@@ -399,7 +429,7 @@
                 House Insurance
               </p>
             </div>
-            <div class="three">
+            <div class="three max-[500px]:hidden">
               <h1 class="text-[20px] font-semibold pb-[25px]">Help</h1>
               <p class="text-[16px] font-medium text-slate-500 pb-[18px]">
                 FAQs
@@ -433,5 +463,6 @@
         <h1>© 2027 UIDesign.to - All rights reserved.</h1>
       </div>
     </footer>
+    <!-- footer-End -->
   </body>
 </html>
